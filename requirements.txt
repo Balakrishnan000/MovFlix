@@ -1,5 +1,4 @@
 pandas
 pyrebase
-Pyrebase4
 requests
 streamlit
