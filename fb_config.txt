@@ -1,0 +1,23 @@
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCveVTigQ0-KaPN_PQAReT-e_NzLAN7odo",
+    authDomain: "movflix-streamlit-iwp.firebaseapp.com",
+    projectId: "movflix-streamlit-iwp",
+    storageBucket: "movflix-streamlit-iwp.appspot.com",
+    messagingSenderId: "478356758013",
+    appId: "1:478356758013:web:7a69e4415fb1bfd90ecd94",
+    measurementId: "G-LFTL9EVB89"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
