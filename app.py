@@ -163,8 +163,28 @@ if choice == 'SignIn':
                         st.text("Genre: "+genres[4])
 
         
-        
-                        
+#CONTACT ME FORM WHICH WILL MAIL ME
+contact_form = """<form action="https://formsubmit.co/devbala2022@gmail.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+     <input type="text" class="txtme" name="name" placeholder = "Your Name" required>
+     <input type="email" class="txtme" name="email" placeholder = "Your Working Email to get reply back" required>
+     <textarea class="txtme" name="message" placeholder="Your Message or Feedback - Positive or Negative - Both welcomed"></textarea>
+     <button type="submit">Send</button>
+</form>
+"""
+st.markdown("***")
+
+st.subheader("Contact Form:")
+st.write("*Here your message reaches to my mailbox directly. (24 hours avg reply time)*")
+st.markdown(contact_form,unsafe_allow_html=True) 
+
+# Use Local CSS File
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+
+local_css("style/style.css")                        
         
 #Removing the made by 
 hide_streamlit_style = """
